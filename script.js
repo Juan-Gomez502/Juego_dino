@@ -69,7 +69,7 @@ function update() {
     // Mueve el obstáculo de derecha a izquierda
     obstacle.x -= gameSpeed;
     if (score % 100 === 0 && score !== 0) {
-        gameSpeed += 5; // Aumenta la velocidad del juego cada 100 puntos
+        gameSpeed += 1; // Aumenta la velocidad del juego cada 100 puntos
     }
     // Cuando el obstáculo sale por la izquierda, se reubica a la derecha con un espacio aleatorio
     if (obstacle.x + obstacle.width < 0) {
